@@ -19,8 +19,11 @@ const ExpenseForm = (props) => {
         props.onSaveExpenseData({
             title : getTitle,
             amount : getAmount,
-            date: getDate
+            date: new Date(getDate),
         })
+        setTitle('')
+        setDate('')
+        setAmount('')
     }
     return (
 <form onSubmit={submitHandler}>
