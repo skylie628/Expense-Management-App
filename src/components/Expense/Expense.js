@@ -2,6 +2,7 @@ import './Expense.css'
 import Card from '../UI/Card'
 import ExpenseItem from './ExpenseItem'
 const Expense = (props) => {
+  console.log(props.items)
 return (
     <Card className = 'expenses'>
          <ExpenseItem
